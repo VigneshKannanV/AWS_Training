@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <style>
+    .header {
+      background-color: darkorange;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      opacity: 0.9;
+    }
+    .input-container { 
+      display: inline;
+      width: 100%;
+      margin-inline-start: 10px;
+      white-space: nowrap;
+      text-align:center
+    }
+    .input-field {
+      width: 10%;
+      padding: 10px 30px;
+      outline: none;
+    }
+    .input-field:focus {
+      border: 2px solid dodgerblue;
+    }
+    .btn {
+      background-color: dodgerblue;
+      color: white;
+      display: inline;
+      margin-left: 20px;
+      padding: 15px 20px;
+      border: none;
+      cursor: pointer;
+      width: 10%;
+      opacity: 0.9;
+      
+    }
+    .btn:hover {
+      opacity: 1;
+    }
+    .output-container {
+      margin-top: 30px;
+      background-color:lightgreen;
+      opacity: 0.6;
+      width: 100%;
+      padding: 10px 20px;
+      
+    }
+    .output-container:hover {
+      opacity: 1;
+    }
+   </style>
+  </head>
+  <body>
+    <h1 style="text-align:left" class="header">AWS S3 Bucket Files</h1>
+    <form action="{{ url_for("index")}}" method="post" class="form_container">
+      <label for="Folder Name" style = "margin-inline-start: 20px"><b>Enter the name of the Folder:</b></label>
+      <div class="input-container">
+        <input class="input-field" type="text" placeholder="A or B or C" name="fname" />
+        <button type="submit" id = "button" class="btn" >Get File Names</button>
+      </div>
+    {% if results %}
+    <div class="output-container">
+      <p style="color:black;"><b>List of files present in folder {{text}}:</b></p>
+      <ul>
+        {% for result in results%}
+        <li style="color:black;">{{ result }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+    </form>
+  </body>
+</html>
