@@ -39,6 +39,8 @@
 
 ![Screenshot (38)](https://user-images.githubusercontent.com/60065716/115725645-aa773a00-a39f-11eb-88c5-81d36dabddd2.png)
 
+![Screenshot (40)](https://user-images.githubusercontent.com/60065716/115727091-ec54b000-a3a0-11eb-9eee-1e4a7690aa86.png)
+
 
 # Deploying the Flask app
 <br/>All the following requirements are installed to deploy and run the flask application
@@ -54,19 +56,25 @@
   
 * Python 3 
   <br/>Python 3 and the package management system is installed using the following commands -
+  <br/>-- sudo apt-get update
+  <br/>-- sudo apt-get install python3
+  <br/>-- sudo apt-get insatll python3-pip
   
-  
-* Packages 
+ * Packages 
   <br/>The required packages to run the flask application such as boto3 are installed using the following commands 
+  <br/>-- pip3 install boto3
   
-  
-![Screenshot (40)](https://user-images.githubusercontent.com/60065716/115727091-ec54b000-a3a0-11eb-9eee-1e4a7690aa86.png)
+![Screenshot (53)](https://user-images.githubusercontent.com/60065716/116087722-c68c1b80-a6be-11eb-8ac4-cd788b87f35a.png)
 
 <br/>Here, then codes are successfully migrated to that instance.(Simple file creation and copy)
+
+
+
 <br/>The flask app was deployed and run app.py file to run the application
-<br/>The flask application ran successfully and accessed via the EC2-public URL at the port 8085 (https://
 
 ![Screenshot (41)](https://user-images.githubusercontent.com/60065716/115730619-18256500-a3a4-11eb-933c-1cf66236de22.png)
+
+<br/>The flask application ran successfully and accessed via the EC2-public URL at the port 8085 (https://3.143.170.33:8085)
 
 ![Screenshot (42)](https://user-images.githubusercontent.com/60065716/115730642-1cea1900-a3a4-11eb-90b4-88093fde7d98.png)
 
@@ -77,3 +85,8 @@
 <br/>Below are the screenshots attached for estimated total and the costs grouped by services and tags. 
 
 ![Screenshot (45)](https://user-images.githubusercontent.com/60065716/115730884-4efb7b00-a3a4-11eb-9daa-0588b3e997a2.png)
+
+![Screenshot (51)](https://user-images.githubusercontent.com/60065716/116087553-98a6d700-a6be-11eb-899d-b348d14844c9.png)
+
+![Screenshot (52)](https://user-images.githubusercontent.com/60065716/116087567-9d6b8b00-a6be-11eb-8c7c-f4700b496c3e.png)
+
