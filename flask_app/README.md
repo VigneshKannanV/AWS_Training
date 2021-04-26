@@ -68,7 +68,9 @@
 
 <br/>Here, then codes are successfully migrated to that instance.(Simple file creation and copy)
 
+![Screenshot (54)](https://user-images.githubusercontent.com/60065716/116088903-f0920d80-a6bf-11eb-8514-f592dbca5aaf.png)
 
+![Screenshot (55)](https://user-images.githubusercontent.com/60065716/116088923-f4be2b00-a6bf-11eb-9490-0a095bbc4bcc.png)
 
 <br/>The flask app was deployed and run app.py file to run the application
 
