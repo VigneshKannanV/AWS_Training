@@ -1,7 +1,8 @@
 # AWS Account Setup
 
-After Signing Up, an IAM User has been created under the root user account and the necessary policies have been created.
-A new tag was created and all the resources created by this IAM user has been tagged with that tag name.
+After Signing Up as a new root user, an IAM User has been created under the root user account and the necessary policies have been created.
+A new tag was created [Tag Name - Hartford, Tag Key - Training]
+All the resources created by this IAM user has been tagged with that tag name.
 
 
 ![Screenshot (39)](https://user-images.githubusercontent.com/60065716/115720256-87965700-a39a-11eb-921f-3ec5e9e1ef9e.png)
@@ -52,12 +53,22 @@ The Security Group is configured to allow incoming traffic only through 8085.
 ![Screenshot (48)](https://user-images.githubusercontent.com/60065716/115729976-81f13f00-a3a3-11eb-9c4c-a74dba228759.png)
 
 
-A connection was made to the instance and all the requirements(python3, awscli) necessary to deploy the flask application were installed. 
+A connection was made to the instance using it's public DNS via the Ubuntu app installed on the local machine.
 
 
 ![Screenshot (38)](https://user-images.githubusercontent.com/60065716/115725645-aa773a00-a39f-11eb-88c5-81d36dabddd2.png)
 
 
+All the following requirements are installed to deploy and run the flask application
+
+* AWS CLI V2
+  The AWS CLI V2 is installed so that it can read all the credentials from a config file to avoid hard codind credentials in the code.
+  The following commands are used to install it.
+  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  unzip awscliv2.zip
+  sudo ./aws/install
+  
+  
 ![Screenshot (40)](https://user-images.githubusercontent.com/60065716/115727091-ec54b000-a3a0-11eb-9eee-1e4a7690aa86.png)
 
 
